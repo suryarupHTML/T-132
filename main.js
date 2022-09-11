@@ -1,7 +1,7 @@
 function setup() {
     canvas = createCanvas(640, 420);
     canvas.center();
-    ObjectDetector = ml5.ObjectDetector('cocoSSD', modelLoaded);
+    ObjectDetector = ml5.objectDetector('cocoSSD', modelLoaded);
     document.getElementById("status").innerHTML = "Status: Detecting Objects.";
 }
 
